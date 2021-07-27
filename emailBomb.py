@@ -6,20 +6,23 @@ import sys
 class bcolors:
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
-    RED = '\033[91M'
+    RED = '\033[91m'
 
 
 def banner ():
-    print(bcolors.GREEN + '{*}*{*} AlienMail-Bomber v2.0 {*}*{*}')
+    print(bcolors.GREEN + '{*}*{*} Mail-Bomber v2.0 {*}*{*}')
     print(bcolors.GREEN + '{*}*{*} Made with codes {*}*{*}')
-    print(bcolors.GREEN + '''                   
-                       .-.
-        .-""`""-.    |(@ @)
-     _/`oOoOoOoOo`\_ \ \-/
-    '.-=-=-=-=-=-=-.' \/ \
-Gh0st `-=.=-.-=.=-'    \ /\
-         ^  ^  ^       _H_ \
-''')
+    print(bcolors.GREEN + '''                                             
+            88                                         
+            88                                  ,d     
+            88                                  88     
+ ,adPPYb,d8 88,dPPYba,   ,adPPYba,  ,adPPYba, MM88MMM  
+a8"    `Y88 88P'    "8a a8"     "8a I8[    ""   88     
+8b       88 88       88 8b       d8  `"Y8ba,    88     
+"8a,   ,d88 88       88 "8a,   ,a8" aa    ]8I   88,    
+ `"YbbdP"Y8 88       88  `"YbbdP"'  `"YbbdP"'   "Y888  
+ aa,    ,88                                            
+  "Y8bbdP"                      ''')
 
 
 class Email_Bomber:
@@ -48,7 +51,7 @@ class Email_Bomber:
                 self.amount(750)
             else:
                 self.amount = int(input(bcolors.GREEN + 'Choose a custom payload size <: '))
-            print(bcolors.RED + '\n{*}*{*} You selected bomb mode: {self.mode} and {self.amount} emails {*}*{*}')
+            print(bcolors.RED + f'\n You have selected bomb mode: {self.mode} and {self.amount} emails ')
         except Exception as e:
             print(f'Error: {e}')
 
