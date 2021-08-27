@@ -1,4 +1,4 @@
-# hackingTools
+# Email Bomber
 
 
 These are tools made just as educational projects to help learn python
